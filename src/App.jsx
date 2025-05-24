@@ -27,8 +27,8 @@ function App() {
           <FoundHospitalsContext.Provider value={[foundHospitals, setFoundHospitals]}>
             <BrowserRouter>
               <Routes>
-                <Route path='/' exact element={<HomePage />} />
-                <Route path='/home' exact element={<HomePage />} />
+                <Route path='/' exact element={<FindPage />} />
+                <Route path='/home' exact element={<FindPage />} />
                 <Route path='/find' exact element={<FindPage />} />
                 <Route path='/bookings' exact element={ <BookingsPage />} />
               </Routes>
